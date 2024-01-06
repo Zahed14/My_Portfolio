@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgba(49, 49, 157, 0.435);
+        width: 100%
+
+
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        text-transform: capitalize;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 23px;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav li a:hover {
+
+        color: rgb(172, 172, 253);
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130;
+
+    }
+
+    .firstsection>div {
+        width: 30%;
+    }
+
+    .leftsection {
+        font-size: 4.3vw;
+    }
+
+    .leftsection .button {
+        padding: 15px;
+    }
+
+    .leftsection .btn {
+        font-size: 1.1vw;
+        padding: 0.8vw;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+
+        border-radius: .7vw;
+
+    }
+
+    .leftsection .btn:hover {
+        color: #9c97f1;
+        box-shadow: 2px 4px 4px #9c97f1;
+        cursor: pointer;
+    }
+
+    .rightsection img {
+        width: 80%;
+        margin: 3.24vw 0;
+    }
+
+    .purple {
+        color: rgba(213, 112, 213, 0.679);
+    }
+
+    .text-grey {
+        color: grey;
+        font-size: .9vw;
+    }
+
+    #element {
+        color: rgba(213, 112, 213, 0.679);
+    }
+
+    main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 2vw 4vw;
+
+    }
+   
+
+    .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+        overflow-x:hidden;
+        overflow-y:hidden ;
+
+
+
+    }
+
+    .secondsection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .secondsection h1 {
+        font-size: 1.87vw;
+
+    }
+
+    .secondsection .vertical {
+        width: 1px;
+        height: 93px;
+        background-color: white;
+        margin: 0 100px;
+    }
+
+    .image-top {
+        width: 45px;
+        position: relative;
+        top: -47px;
+        left: -22px;
+    }
+
+    .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        color: #9c97f1;
+    }
+
+    .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: grey;
+        width: 150px;
+        font-size: 10px;
+
+    }
+
+    footer {
+        background-color: #0b001380;
+
+
+    }
+
+    .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+
+    }
+
+    .footer>div {
+        width: 15.17vw;
+    }
+
+    .footer ul {
+        list-style: none;
+    }
+
+    .footer ul a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer .footer-rights {
+        text-align: center;
+        color: grey;
+        padding: 12px;
+
+    }
+
+    i {
+        font-size: larger;
+        color: #dadada;
+
+        cursor: pointer;
+    }
+
+    .ri-sun-fill {
+        display: flex;
+    }
+
+    .ri-moons-fill {
+        display: none;
+    }
+   
+   
+    
+    @media (width<=600px) {
+     
+        nav ul{
+            display: none;
+        }
+        
+    }
+</style>
+
+<body>
+    <div id="main">
+    <header>
+        <nav>
+            <div class="left">portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contacts</a></li>
+                    <li><i class="ri-sun-fill"></i></li>
+                    <li> <i class="ri-moon-fill"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, I'm <span class="purple">Zahed Khan</span>
+                <div>and I'm a Passionate </div>
+                <span id="element"></span>
+                <div class="button">
+                  <a href="">  <button class="btn" >Download Resume</button></a>
+                  <a href="https://github.com/Zahed14">  <button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML developer (2023-now)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi recusandae provident ea
+                        aperiam ducimus eligendi ullam deserunt accusantium sint!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        CSS developer (2023-now)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam non nihil quae,
+                        ratione quidem.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        JS developer (2023-now)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur rem atque expedita
+                        soluta saepe quod suscipit temporibus sed, dolorem facere odio quisquam amet commodi inventore
+                        quo. Cumque, ullam excepturi.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Web-Developer (2023-now)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos nisi qui sint optio et,
+                        modi ut? Maiores, eligendi?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="content.png" alt="">
+                    <div class="vertical-title">
+                        Content Writer (2023-now)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi recusandae provident ea
+                        aperiam ducimus eligendi ullam deserunt accusantium sint!
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>zahed's developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </div>
+            <div class="footer-forth">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyrights &#169; www.Zahed'sportfolio.com| All Right Reserved
+        </div>
+    </footer>
+</div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web-Developer', 'Content Writer','Web-Designer'],
+            typeSpeed: 65,
+        });
+    </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script >
+        setTimeout(alert('This website is under contruction and this should be opened on desktop '),1000);
+    </script>
+</body>
+
+</html>
